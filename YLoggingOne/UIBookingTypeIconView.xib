@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIBookingTypeIconView" customModule="YLogging" customModuleProvider="target">
+            <connections>
+                <outlet property="ivIcon" destination="jjv-0T-Xpb" id="g75-uI-K1m"/>
+                <outlet property="view" destination="iN0-l3-epB" id="3fb-Il-ngO"/>
+                <outlet property="viewBg" destination="WId-gh-sni" id="zCB-yo-gO1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WId-gh-sni">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.88235294117647056" green="0.396078431372549" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="WId-gh-sni" secondAttribute="height" multiplier="1:1" id="uZh-zw-Y32"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="booking-type-standard" translatesAutoresizingMaskIntoConstraints="NO" id="jjv-0T-Xpb">
+                    <rect key="frame" x="25" y="25" width="50" height="50"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="jjv-0T-Xpb" firstAttribute="centerY" secondItem="WId-gh-sni" secondAttribute="centerY" id="8im-kQ-cDY"/>
+                <constraint firstItem="WId-gh-sni" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Gur-mV-4Vw"/>
+                <constraint firstItem="WId-gh-sni" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" priority="500" id="MO3-kW-eje"/>
+                <constraint firstItem="jjv-0T-Xpb" firstAttribute="centerX" secondItem="WId-gh-sni" secondAttribute="centerX" id="NU3-6W-6rF"/>
+                <constraint firstItem="jjv-0T-Xpb" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="POv-HG-O9e"/>
+                <constraint firstItem="jjv-0T-Xpb" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="Pmr-R2-zyy"/>
+                <constraint firstItem="WId-gh-sni" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Q0c-nX-RQr"/>
+                <constraint firstItem="WId-gh-sni" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" priority="500" id="vBz-pf-3hT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1234" y="-1805"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="booking-type-standard" width="31" height="24"/>
+    </resources>
+</document>
